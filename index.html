@@ -56,7 +56,7 @@
   controlLayers.addBaseLayer(terrain, 'แผนที่ฐาน');
     
     /* dol layer */
-     var dol = L.WMS.layer("http://110.164.49.72:8081/geoserver/WMSDOL/wms", "MV_SPARCEL", {
+     var dol = L.WMS.layer('http://110.164.49.72:8081/geoserver/WMSDOL/wms', "MV_SPARCEL", {
     format: 'image/png',
             uppercase: true,
             transparent: true,
@@ -65,7 +65,7 @@
             info_format: 'text/html',
             opacity: 1,
             identify: false,
-    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://www.openstreetmap.org/copyright">ODbL</a>.'
+   attribution: '',
   }); // EDIT - insert or remove ".addTo(map)" before last semicolon to display by default
   controlLayers.addBaseLayer(dol, 'รูปแปลงที่ดิน');
  
