@@ -56,15 +56,8 @@
   controlLayers.addBaseLayer(terrain, 'แผนที่ฐาน');
     
     /* dol layer */
-     var dol = L.WMS.layer('http://110.164.49.72:8081/geoserver/WMSDOL/wms', "MV_SPARCEL", {
-    format: 'image/png',
-            uppercase: true,
-            transparent: true,
-            continuousWorld : true,
-            tiled: true,
-            info_format: 'text/html',
-            opacity: 1,
-            identify: false,
+    var dol = L.WMS.layer("http://110.164.49.72:8081/geoserver/WMSDOL/wms", "MV_SPARCEL", {
+  
    attribution: '',
   }).addTo(map); // EDIT - insert or remove ".addTo(map)" before last semicolon to display by default
   controlLayers.addBaseLayer(dol, 'รูปแปลงที่ดิน');
